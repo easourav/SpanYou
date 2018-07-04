@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/colorPrimary">
+    <ImageView
+        android:id="@+id/ivSpanWheel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/spanwheel"/>
+
+    <ImageView
+        android:id="@+id/ivUpArrow"
+    android:layout_width="50dp"
+    android:layout_height="50dp"
+    android:layout_alignParentStart="true"
+    android:layout_alignParentTop="true"
+    android:layout_marginStart="145dp"
+    android:layout_marginTop="196dp"
+    android:src="@drawable/uparrow"
+    android:layout_alignParentLeft="true"
+    android:layout_marginLeft="145dp" />
+
+    <ImageView
+        android:id="@+id/ivDownArrow"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="205dp"
+        android:layout_toEndOf="@+id/ivUpArrow"
+        android:src="@drawable/donnarro"
+        android:layout_toRightOf="@+id/ivUpArrow" />
+
+    <Button
+        android:id="@+id/btnPlayer1Span"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="67dp"
+        android:text="@string/span" />
+
+    <Button
+        android:id="@+id/btnPlayer2Span"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:text="@string/span"
+        android:onClick="span2"/>
+
+    <TextView
+    android:id="@+id/tvPlayer1Score"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_alignParentStart="true"
+    android:layout_alignParentTop="true"
+    android:layout_marginStart="21dp"
+    android:layout_marginTop="26dp"
+    android:text="@string/player_1"
+    android:textColor="@color/colorText"
+    android:textSize="20sp"
+    android:layout_alignParentLeft="true"
+    android:layout_marginLeft="21dp" />
+
+    <TextView
+        android:id="@+id/tvPlayer2Score"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/tvPlayer1Score"
+        android:layout_marginBottom="24dp"
+        android:text="@string/player_2"
+        android:textColor="@color/colorText"
+        android:textSize="20sp"
+        android:layout_alignLeft="@+id/tvPlayer1Score" />
+
+
+</RelativeLayout>
